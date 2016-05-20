@@ -1,0 +1,5 @@
+C:\projects\cflr_suite\src\DissoMaster\D2\ext\litjson\build\MSVC\LitJson1\bin\Debug\LitJson1.dll
+C:\projects\cflr_suite\src\DissoMaster\D2\ext\litjson\build\MSVC\LitJson1\bin\Debug\LitJson1.pdb
+C:\projects\cflr_suite\src\DissoMaster\D2\ext\litjson\build\MSVC\LitJson1\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\cflr_suite\src\DissoMaster\D2\ext\litjson\build\MSVC\LitJson1\obj\Debug\LitJson1.dll
+C:\projects\cflr_suite\src\DissoMaster\D2\ext\litjson\build\MSVC\LitJson1\obj\Debug\LitJson1.pdb
