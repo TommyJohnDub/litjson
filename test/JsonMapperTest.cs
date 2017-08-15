@@ -1046,5 +1046,29 @@ namespace LitJson.Test
             expectedJson = "{\"TestEnum\":null}";
             Assert.AreEqual(expectedJson, JsonMapper.ToJson(value));
         }
+
+        [Test]
+        public void EnumDictionaryTest()
+        {
+            var planetaryMass = new Dictionary<Planets, decimal>()
+            {
+                { Planets.Jupiter, 1898m },
+                { Planets.Neptune, 102m },
+                { Planets.Saturn, 568m },
+                { Planets.Uranus, 86.8m },
+                { Planets.Pluto, 0.0146m },
+            };
+
+            var json = JsonMapper.ToJson(planetaryMass);
+
+            var parsedPlanetaryMass = JsonMapper.ToObject<Dictionary<Planets, decimal>>(json);
+
+            foreach(Planets planet in Enum.GetValues(typeof(Planets)))
+            {
+                Assert.AreEqual(planetaryMass[planet], parsedPlanetaryMass[planet]);
+            }
+
+
+        }
     }
 }
